@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Test</title>
+    <style>
+        .second{
+            display: none;
+        }
+        .main2{
+            display: none;
+        }
+        .main3{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form" id="main">
+            <input id="pass" type="password" placeholder="Enter Password">
+            <input type="submit" onclick="myfunc()">
+    </div>
+    <div class="main second" id="second">
+        <a href="https://forms.gle/JEdsKtYWiN28zPuu8"><button>CCC Level 1</button></a>
+        <a href="https://forms.gle/NGZH9btksqWu1Qku5"><button>CCC Level 2</button></a>
+        <a href="https://forms.gle/JgUpBgNdUkEyGZ1w6"><button>CCC Level 3</button></a>
+        <a href="https://forms.gle/zkVCnPUtm4Tkie3d6"><button>CCC Level 4</button></a>
+        <a href="https://forms.gle/WHJa9oErSzKWG18Z8"><button>CCC Level 5</button></a> 
+        <a href="https://forms.gle/S2vcQqBNQroJ57Fr6"><button>Tally Level 1</button></a>
+        <a href="https://forms.gle/KFFbZYorN9hyfsyy9"><button>Tally Level 2</button></a>
+        <a href="https://forms.gle/4t37pPmoLSqBAPEZ8"><button>Tally Level 3</button></a>
+    </div>
+    <script>
+        function myfunc(){
+        password= document.getElementById('pass').value;
+        if (password == "Srimhv2024"){
+            document.getElementById('main').classList = "main2"
+            document.getElementById('second').classList = "main3"
+        }
+    }
+    </script>
+</body>
+
+</html>
