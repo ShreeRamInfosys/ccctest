@@ -22,10 +22,17 @@
 </head>
 
 <body>
-    <div class="form form-control" id="main">
-            <input id="pass" type="password" placeholder="Enter Password">
-            <input type="submit" onclick="myfunc()">
-    </div>
+    <div class="container mt-5">
+    <form class="form-control" id="main" action="#" method="POST">
+        <div class="mb-3">
+            <!-- Bootstrap Password Input -->
+            <label for="pass" class="form-label">Enter Password</label>
+            <input id="pass" type="password" class="form-control" placeholder="Enter Password" required>
+        </div>
+        
+        <button type="button" class="btn btn-primary" onclick="myfunc()">Submit</button>
+    </form>
+</div>
     <div class="main second" id="second">
         <a href="https://forms.gle/JEdsKtYWiN28zPuu8"><button class="btn btn-primary">CCC Level 1</button></a>
         <a href="https://forms.gle/NGZH9btksqWu1Qku5"><button>CCC Level 2</button></a>
