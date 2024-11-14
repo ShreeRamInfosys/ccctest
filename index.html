@@ -84,9 +84,9 @@
 </head>
 <body>
     <div class="container mt-5">
-        <form class="form-control" id="main" action="#" method="POST" onsubmit="myfunc(event)">
+        <form class="form-control" id="main" action="#" name="login" method="POST" onsubmit="myfunc(event)">
             <div class="mb-3">
-                <input id="pass" type="password" class="form-control" placeholder="Enter Password" required>
+                <input id="pass" name="pass" type="password" class="form-control" placeholder="Enter Password" required>
             </div>
             <button type="submit" class="btn btn-primary w-100">Submit</button>
         </form>
@@ -108,7 +108,7 @@
     <script>
         function myfunc(event) {
             event.preventDefault();  // Prevent form submission and page reload
-            const password = document.getElementById('pass').value;
+            const password = document.forms['login']['pass'].value;
             if (password === "Srimhv2024") {
                 document.getElementById('main').classList = "main2";  // Hide the password form
                 document.getElementById('second').classList = "main3";  // Show the links
